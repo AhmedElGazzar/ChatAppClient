@@ -3,12 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package server.db;
+package chat.client.service.dao;
+
+import java.rmi.Remote;
 
 /**
  *
  * @author ElGazzar
  */
-public enum Status {
-    online, offline, avaliable, busy, away
+public interface SignInDao extends Remote
+{
+    public void recieve();
 }
